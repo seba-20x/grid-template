@@ -16,7 +16,8 @@ body {
 }
 
 .header {
-    background-color: aqua;
+    box-shadow: 0 0 20px rgba(1,41,112,.1);
+    background-color: #212529;
     grid-area: header;
     
 }
@@ -24,12 +25,36 @@ body {
 .menu {
     display: flex;
     list-style: none;
-    justify-content: center;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
 }
 
-a {
+.menu .menu-items{
+    display: flex;
+    
+}
+
+.menu .link {
+    padding: 10px;
+}
+
+.menu-items i {
+    align-self: center;
+}
+
+.menu .logo {
+    margin-left: 20px;
+}
+/* a {
     text-decoration: none;
-    color:inherit;   
+    color:inherit;  
+} */
+
+.menu img {
+    width: 150px;
+    height: 50px;
 }
 
 .sidebar {
@@ -42,13 +67,10 @@ a {
     background-color: #fff
 }
 
-/* .nav-sidebar {
-   
-} */
 
-ul {
+/* ul {
     list-style-type: none;
-}
+} */
 
 
 section{
@@ -64,7 +86,7 @@ section{
     flex-direction: column;
     padding: 20px;   
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
-    
+    width: 400px;
 }
 img:hover {
   
@@ -108,7 +130,7 @@ img {
 
 .box-button {
     
-    width: 100%;
+    width: 442px;
     border: #E8EBE4 1px solid;
     height: 40px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
@@ -117,7 +139,9 @@ img {
 
 
 footer{
-    background-color: chocolate;
+    box-shadow: 0 0 20px rgba(1,41,112,.1);
+    background-color: #212529;
+    color: #fff;
     grid-area: footer;
     display: flex;
     justify-content:center ;
